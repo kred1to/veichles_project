@@ -1,10 +1,14 @@
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-car_data = pd.read_csv(r'C:\Users\gomes\OneDrive\Documentos\repositórios\veichle project\veichles_project\vehicles.csv')
+st.write("Diretório atual:", os.getcwd())
+st.write("Arquivos encontrados:", os.listdir())
 
-st.header("Análise Exploratória de Dados - Conjunto de Dados de Anúncios de Vendas de Carros")
+car_data = pd.read_csv(r"C:\Users\gomes\OneDrive\Documentos\repositórios\veichle project\veichles_project\vehicles.csv")
+
+st.header("Análise Exploratória de Dados: Anúncios de Vendas de Carros")
 
 st.write("Visualizando parte dos dados")
 st.dataframe(car_data.head())

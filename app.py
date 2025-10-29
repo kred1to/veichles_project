@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-car_data = pd.read_csv(r"C:\Users\gomes\OneDrive\Documentos\repositórios\veichle project\veichles_project\vehicles.csv")
+car_data = pd.read_csv("vehicles.csv")
 
 st.header("Análise Exploratória de Dados: Anúncios de Vendas de Carros")
 
